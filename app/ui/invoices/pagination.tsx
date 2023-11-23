@@ -12,7 +12,7 @@ export default function Pagination({ totalPages }: { totalPages: number }) {
   const searchParams = useSearchParams();
   const currentPage = Number(searchParams.get('page')) || 1;
 
-  const createPageUrl = (pageNumber: string | number) => {
+  const createPageURL = (pageNumber: string | number) => {
     const params = new URLSearchParams(searchParams);
     params.set('page', pageNumber.toString());
 
