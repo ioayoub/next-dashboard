@@ -2,7 +2,12 @@ import AcmeLogo from '@/app/ui/acme-logo';
 import Link from 'next/link';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import { lusitana } from './ui/fonts';
+import { Metadata } from 'next';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: 'Dashboard',
+};
 
 export default function Page() {
   return (

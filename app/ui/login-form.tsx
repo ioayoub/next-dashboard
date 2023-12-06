@@ -74,6 +74,10 @@ export default function LoginForm() {
             </>
           )}
         </div>
+        <div className="flex flex-col text-center text-sm">
+          <span>Email: user@nextmail.com</span>
+          <span>Password: 123456</span>
+        </div>
       </div>
     </form>
   );
