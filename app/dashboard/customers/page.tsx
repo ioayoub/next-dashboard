@@ -18,10 +18,10 @@ export default async function Page({
 }) {
   const query = searchParams?.query || '';
 
-  console.log('query', query);
-
   const customers: FormattedCustomersTable[] =
     await fetchFilteredCustomers(query);
+
+  //TODO : Change skeleton here
 
   return (
     <div className="w-full">
